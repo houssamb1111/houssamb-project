@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+	body {
+		font-family: Arial, sans-serif;
+		background-image: url('https://reasons-prod.storage.googleapis.com/wp-content/uploads/blog__hero-viruses-mosquitoes-and-suffering.jpg');
+	    background-size: cover;
+	    background-position: center;
+	    padding: 375px;
+		color: #f5f5f5;
+
+	}
+	
+	h1, h2 {
+		text-align: center;
+        border: 2px solid #f80606;
+	}
+	
+	form {
+		max-width: 500px;
+		margin: 0 auto;
+		padding: 20px;
+		border: 2px solid #f80000;
+		border-radius: 5px;
+	}
+	
+	label {
+		display: block;
+		margin-bottom: 10px;
+	}
+	
+	button[type="submit"] {
+		display: block;
+		margin: 20px auto;
+		padding: 10px 20px;
+		background-color: #4CAF50;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	
+	#resultat {
+		max-width: 500px;
+		margin: 20px auto;
+		padding: 20px;
+		border-radius: 5px;
+		text-align: center;
+	}
+	</style>
+	
+</head>
+<body>
+	<h1>Quiz</h1>
+	
+	<form id="quiz-form">
+		<h2>Question 1:</h2>
+		<p>Combien de titres les Chicago Bulls ont-ils remportés ?</p>
+		<label><input type="radio" name="q1" value="a">a) 1</label><br>
+		<label><input type="radio" name="q1" value="b">b) 4</label><br>
+		<label><input type="radio" name="q1" value="c">c) 6</label><br>
+		
+		<h2>Question 2:</h2>
+		<p>Qui est le meilleur marqueur des Bulls avec 29 277 points ?</p>
+		<label><input type="radio" name="q2" value="a">a) Scottie Pippen</label><br>
+		<label><input type="radio" name="q2" value="b">b) Michael Jordan</label><br>
+		<label><input type="radio" name="q2" value="c">c) Dennis Rodman</label><br>
+		
+        <h2>Question 3:</h2>
+		<p>Combien de "three-peat" les Bulls ont-ils réussis ?</p>
+		<label><input type="radio" name="q1" value="a">a) 2</label><br>
+		<label><input type="radio" name="q1" value="b">b) 3</label><br>
+		<label><input type="radio" name="q1" value="c">c) 1</label><br>
+
+        <h2>Question 4:</h2>
+		<p>Quel joueur a recopié le dunk des lancers francs de Michael Jordan ?</p>
+		<label><input type="radio" name="q1" value="a">a) Horace Grant</label><br>
+		<label><input type="radio" name="q1" value="b">b) Scottie Pippen</label><br>
+		<label><input type="radio" name="q1" value="c">c) Artis Gilmore</label><br>
+
+        <h2>Question 5:</h2>
+		<p>Quel était le surnom de Michael Jordan ?</p>
+		<label><input type="radio" name="q1" value="a">a) Sa Majesté</label><br>
+		<label><input type="radio" name="q1" value="b">b) 63 points on Celtics's face</label><br>
+		<label><input type="radio" name="q1" value="c">c) The Air France</label><br>
+
+        <h2>Question 6:</h2>
+		<p>Comment s'appelle le coach des Bulls ayant remporté les 6 titres ?</p>
+		<label><input type="radio" name="q1" value="a">a) Doug Collins</label><br>
+		<label><input type="radio" name="q1" value="b">b) Phil Jackson</label><br>
+		<label><input type="radio" name="q1" value="c">c) Jim Boylen</label><br>
+
+        <h2>Question 7:</h2>
+		<p>Comment s'appelle le GM ayant remporté les 6 titres ?</p>
+		<label><input type="radio" name="q1" value="a">a) Jerry Krause</label><br>
+		<label><input type="radio" name="q1" value="b">b) Jerry Reinsdorf</label><br>
+		<label><input type="radio" name="q1" value="c">c) Jerry West</label><br>
+
+        <h2>Question 8:</h2>
+		<p>Comment se nomme le dernier shoot de Michael Jordan lors des finales 98 contre le Jazz ?</p>
+		<label><input type="radio" name="q1" value="a">a) Big Shot</label><br>
+		<label><input type="radio" name="q1" value="b">b) The Last Shot</label><br>
+		<label><input type="radio" name="q1" value="c">c) No Jazz</label><br>
+
+		<button type="submit">Soumettre</button>
+	</form>
+
+	<div id="resultat"></div>
+
+	<script src="script.js"></script>
+</body>
+</html>

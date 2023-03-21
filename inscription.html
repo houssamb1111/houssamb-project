@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      * {
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://th.bing.com/th/id/R.b6b0511fce931d05ea9798ba02452635?rik=x6TWV940K47lXg&riu=http%3a%2f%2fs1.picswalls.com%2fwallpapers%2f2014%2f07%2f25%2fbasketball-background_041013638_92.jpg&ehk=Qb43wgE4X6JO3BLV4IDiAfLpJtkitMOu7fMuDk70z3s%3d&risl=&pid=ImgRaw&r=0');
+	background-size: cover;
+}
+
+.container {
+  background-color: #fcfcfc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  max-width: 500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: #45a049;
+}
+
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1>Inscription</h1>
+        <label for="nom"><b>Nom</b></label>
+        <input type="text" placeholder="Entrez votre nom" name="nom" required>
+
+        <label for="prenom"><b>Prénom</b></label>
+        <input type="text" placeholder="Entrez votre prénom" name="prenom" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Entrez votre email" name="email" required>
+
+        <label for="password"><b>Mot de passe</b></label>
+        <input type="password" placeholder="Entrez votre mot de passe" name="password" required>
+
+        <button type="submit">S'inscrire</button>
+      </form>
+    </div>
+  </body>
+</html>
